@@ -7,75 +7,18 @@
 </head>
 <body>
 
+  <div class="container" id="appContainer"></div>
 
-  <div class="container">
+  <script src="js/lib/react-with-addons.js"></script>
+  <script src="js/lib/JSXTransformer.js"></script>
+  <script src="js/lib/lodash.min.js"></script>
+  <script src="data/events.js"></script>
 
-    <div class="page-header">
-      <div class="row">
-        <div class="col-lg-8 col-md-7 col-sm-6">
-          <h1>Events App</h1>
-          <p class="lead">Built in React</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="list-group">
-          <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">Frontend Masters React Workshop Livestream</h4>
-            <p class="list-group-item-text">February 13</p>
-          </a>
-
-          <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">HTML5 Denver</h4>
-            <p class="list-group-item-text">February 16</p>
-          </a>
-
-          <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">HTML5 Denver</h4>
-            <p class="list-group-item-text">February 16</p>
-          </a>
-
-          <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">HTML5 Denver</h4>
-            <p class="list-group-item-text">February 16</p>
-          </a>
-
-          <a href="#" class="list-group-item btn btn-primary">Add Event</a>
-        </div>
-
-      </div>
-
-      <div class="col-lg-6">
-        <h3>HTML5 Denver</h3>
-        <p><time datetime="2015-02-16">February 16</time></p>
-        <p>At 1550 Wynkoop, Denver</p>
-        <p>Learn about React and why tooling is awesome.</p>
-
-        <hr>
-
-        <div class="form-group">
-          <label class="control-label" for="titleInput">Title</label>
-          <input class="form-control" id="titleInput" type="text" value="Title">
-        </div>
-
-        <div class="form-group">
-          <label class="control-label" for="dateInput">Date</label>
-          <input class="form-control" id="dateInput" type="text" value="2015-02-16">
-        </div>
-
-        <div class="form-group">
-          <label class="control-label" for="descriptionInput">Description</label>
-          <input class="form-control" id="descriptionInput" type="text" value="Description">
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <a href="#" class="btn btn-primary">Edit</a>
-      </div>
-    </div>
-  </div>
+  <script type="text/jsx" src="js/Header.jsx"></script>
+  <script type="text/jsx" src="js/EventList.jsx"></script>
+  <script type="text/jsx" src="js/EventListItem.jsx"></script>
+  <script type="text/jsx" src="js/EventDetail.jsx"></script>
+  <script type="text/jsx" src="js/app.jsx"></script>
 
 </body>
 </html>
