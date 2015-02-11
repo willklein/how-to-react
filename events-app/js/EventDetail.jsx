@@ -1,5 +1,6 @@
 var EventDetail = React.createClass({
   render: function() {
+    console.log('EventDetail render');
     var event = this.props.event;
 
     return (
@@ -10,4 +11,12 @@ var EventDetail = React.createClass({
       </div>
     );
   },
+
+  shouldComponentUpdate: function(nextProps, nextState) {
+    return nextProps.event !== this.props.event;
+  },
+
+  componentDidUpdate: function() {
+    console.log('EventDetail component did update!');
+  }
 });
