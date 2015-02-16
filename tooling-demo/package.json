@@ -1,0 +1,21 @@
+{
+  "name": "tooling-demo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^0.12.2",
+    "webpack": "~1.5.3",
+    "lodash": "^3.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.5.3",
+    "http-server": "^0.7.4"
+  },
+  "scripts": {
+    "start": "node_modules/http-server/bin/http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
