@@ -1,24 +1,13 @@
 var EventList = React.createClass({
   render: function() {
-    var events = this.props.events;
-
-    var eventsHtml = _.map(events, this._getEvent, this);
-
     return (
-      <div className="col-lg-4">
-        <div className="list-group">
+      <div className="list-group">
+        <EventListItem />
 
-          { eventsHtml }
+        <EventListItem />
 
-          <a href="#" className="list-group-item btn btn-primary">Add Event</a>
-        </div>
+        <a href="#" className="list-group-item btn btn-primary">Add Event</a>
       </div>
-    );
-  },
-
-  _getEvent: function(event) {
-    return (
-      <EventListItem event={ event } onClick={ this.props.onSelect }/>
     );
   }
 });
