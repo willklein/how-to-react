@@ -10,11 +10,13 @@
   },
   "devDependencies": {
     "webpack": "^1.5.3",
-    "http-server": "^0.7.4"
+    "http-server": "^0.7.4",
+    "jsx-loader": "^0.12.2"
   },
   "scripts": {
-    "start": "node_modules/http-server/bin/http-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build && npm run server",
+    "build": "node node_modules/webpack/bin/webpack.js",
+    "server": "node_modules/http-server/bin/http-server"
   },
   "author": "",
   "license": "ISC"

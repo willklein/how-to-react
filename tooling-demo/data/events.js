@@ -1,4 +1,4 @@
-var eventsData = {
+module.exports = {
   "events": [
     {
       "title": "Frontend Masters React Workshop Livestream",

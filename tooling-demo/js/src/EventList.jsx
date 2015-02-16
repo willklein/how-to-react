@@ -1,3 +1,7 @@
+var _ = require('lodash');
+var React = require('react');
+var EventListItem = require('./EventListItem');
+
 var EventList = React.createClass({
   render: function() {
     var listItems = _.map(this.props.events, this._getListItem, this);
@@ -13,7 +17,7 @@ var EventList = React.createClass({
 
   _getListItem: function(event, index) {
     var component = this;
-    
+
     var onClick = function() {
       component.props.onSelect(event);
     };
@@ -23,3 +27,5 @@ var EventList = React.createClass({
     );
   }
 });
+
+module.exports = EventList;

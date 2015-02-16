@@ -1,3 +1,5 @@
+var React = require('react');
+
 var EventListItem = React.createClass({
   render: function() {
     var event = this.props.event;
@@ -10,3 +12,5 @@ var EventListItem = React.createClass({
     );
   }
 });
+
+module.exports = EventListItem;

@@ -1,3 +1,9 @@
+var React = require('react');
+var Header = require('./Header');
+var EventList = require('./EventList');
+var EventDetail = require('./EventDetail');
+var eventsData = require('../../data/events.js')
+
 var App = React.createClass({
 
   getInitialState: function() {

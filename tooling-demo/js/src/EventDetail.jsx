@@ -1,3 +1,5 @@
+var React = require('react');
+
 var EventDetail = React.createClass({
   render: function() {
     console.log('EventDetail render');
@@ -20,3 +22,5 @@ var EventDetail = React.createClass({
     console.log('EventDetail component did update!');
   }
 });
+
+module.exports = EventDetail;
